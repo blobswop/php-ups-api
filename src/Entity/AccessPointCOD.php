@@ -24,7 +24,7 @@ class AccessPointCOD implements NodeInterface
     private $monetaryValue;
 
     /**
-     * @param null $response
+     * @param \stdClass|null $response
      */
     public function __construct(\stdClass $response = null)
     {
