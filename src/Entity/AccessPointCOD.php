@@ -40,7 +40,6 @@ class AccessPointCOD implements NodeInterface
 
     /**
      * @param null|DOMDocument $document
-     *
      * @return DOMElement
      */
     public function toNode(DOMDocument $document = null)
@@ -67,10 +66,13 @@ class AccessPointCOD implements NodeInterface
 
     /**
      * @param string $currencyCode
+     * @return AccessPointCOD
      */
     public function setCurrencyCode($currencyCode)
     {
         $this->currencyCode = $currencyCode;
+
+        return $this;
     }
 
     /**
@@ -83,9 +85,12 @@ class AccessPointCOD implements NodeInterface
 
     /**
      * @param float $monetaryValue
+     * @return AccessPointCOD
      */
     public function setMonetaryValue($monetaryValue)
     {
         $this->monetaryValue = $monetaryValue;
+
+        return $this;
     }
 }

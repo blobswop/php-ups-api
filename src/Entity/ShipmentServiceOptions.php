@@ -132,7 +132,6 @@ class ShipmentServiceOptions implements NodeInterface
 
     /**
      * @param null|DOMDocument $document
-     *
      * @return DOMElement
      */
     public function toNode(DOMDocument $document = null)
@@ -218,21 +217,23 @@ class ShipmentServiceOptions implements NodeInterface
 
     /**
      * @param AccessPointCOD $accessPointCOD
-     * @return $this
+     * @return ShipmentServiceOptions
      */
     public function setAccessPointCOD($accessPointCOD)
     {
         $this->accessPointCOD = $accessPointCOD;
+
         return $this;
     }
 
     /**
      * @param InternationalForms $data
-     * @return $this
+     * @return ShipmentServiceOptions
      */
     public function setInternationalForms(InternationalForms $data)
     {
         $this->internationalForms = $data;
+
         return $this;
     }
 
@@ -246,11 +247,12 @@ class ShipmentServiceOptions implements NodeInterface
 
     /**
      * @param LabelMethod $data
-     * @return $this
+     * @return ShipmentServiceOptions
      */
     public function setLabelMethod(LabelMethod $data)
     {
         $this->labelMethod = $data;
+
         return $this;
     }
 
@@ -264,11 +266,12 @@ class ShipmentServiceOptions implements NodeInterface
 
     /**
      * @param LabelDelivery $data
-     * @return $this
+     * @return ShipmentServiceOptions
      */
     public function setLabelDelivery(LabelDelivery $data)
     {
         $this->labelDelivery = $data;
+
         return $this;
     }
 
@@ -282,10 +285,8 @@ class ShipmentServiceOptions implements NodeInterface
 
     /**
      * @param Notification $notification
-     *
+     * @return ShipmentServiceOptions
      * @throws \Exception
-     *
-     * @return $this
      */
     public function addNotification(Notification $notification)
     {
@@ -321,6 +322,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setSaturdayPickup($SaturdayPickup)
     {
         $this->SaturdayPickup = $SaturdayPickup;
+
         return $this;
     }
 
@@ -339,6 +341,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setSaturdayDelivery($SaturdayDelivery)
     {
         $this->SaturdayDelivery = $SaturdayDelivery;
+
         return $this;
     }
 
@@ -357,6 +360,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setCOD($COD)
     {
         $this->COD = $COD;
+
         return $this;
     }
 
@@ -376,6 +380,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setCallTagARS($CallTagARS)
     {
         $this->CallTagARS = $CallTagARS;
+
         return $this;
     }
 
@@ -394,6 +399,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setNegotiatedRatesIndicator($NegotiatedRatesIndicator)
     {
         $this->NegotiatedRatesIndicator = $NegotiatedRatesIndicator;
+
         return $this;
     }
 
@@ -412,6 +418,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setImportControlIndicator($importControlIndicator)
     {
         $this->importControlIndicator = $importControlIndicator;
+
         return $this;
     }
 
@@ -422,6 +429,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setDeliveryConfirmation(DeliveryConfirmation $deliveryConfirmation)
     {
         $this->deliveryConfirmation = $deliveryConfirmation;
+
         return $this;
     }
 
@@ -448,6 +456,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setDirectDeliveryOnlyIndicator($DirectDeliveryOnlyIndicator)
     {
         $this->DirectDeliveryOnlyIndicator = $DirectDeliveryOnlyIndicator;
+
         return $this;
     }
 
@@ -466,6 +475,7 @@ class ShipmentServiceOptions implements NodeInterface
     public function setDeliverToAddresseeOnlyIndicator($DeliverToAddresseeOnlyIndicator)
     {
         $this->DeliverToAddresseeOnlyIndicator = $DeliverToAddresseeOnlyIndicator;
+
         return $this;
     }
 }
